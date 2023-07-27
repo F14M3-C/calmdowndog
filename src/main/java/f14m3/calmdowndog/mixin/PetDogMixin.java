@@ -18,7 +18,7 @@ public class PetDogMixin {
 	public void interactMob(PlayerEntity player, Hand hand, CallbackInfoReturnable<ActionResult> cil) {
 		World world = player.getWorld();
 		WolfEntity wolf = ((WolfEntity)(Object)this);
-		if (player.isSneaking() && wolf.isTamed()) {
+		if (player.isSneaking() && wolf.isTamed() && !world.isClient()) {
 			world.sendEntityStatus(wolf, EntityStatuses.ADD_POSITIVE_PLAYER_REACTION_PARTICLES);
 			if (wolf.isOwner(player)) {
 				wolf.stopAnger();
