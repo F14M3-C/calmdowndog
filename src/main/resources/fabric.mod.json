@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "calmdowndog",
+	"version": "${version}",
+	"name": "Calm down, dog!",
+	"description": "Pet your dog to make it stop attacking other players.",
+	"authors": [
+		"F14M3"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/F14M3-C/calmdowndog"
+	},
+	"license": "WTFPL",
+	"icon": "assets/calmdowndog/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": []
+	},
+	"mixins": [
+		"calmdowndog.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
