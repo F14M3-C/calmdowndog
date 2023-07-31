@@ -3,7 +3,8 @@
 	"package": "f14m3.calmdowndog.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"PetDogMixin"
+		"PetMixin",
+		"PetParrotMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
